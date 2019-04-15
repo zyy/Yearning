@@ -4,6 +4,7 @@ import ast
 from libs import baseview
 from libs.cryptoAES import cryptoAES
 from libs import con_database
+from libs import con_mssql_database
 from core.task import grained_permissions
 from libs import util
 from rest_framework.response import Response
@@ -63,9 +64,11 @@ class management_db(baseview.SuperUserpermissions):
                 end = int(page) * 10
                 if con['valve']:
                     page_number = DatabaseList.objects.filter(connection_name__contains=con['connection_name'],
-                                                              computer_room__contains=con['computer_room']).count()
+                                                              computer_room=con['computer_room'],
+                                                              dbtype=con['dbtype']).count()
                     info = DatabaseList.objects.filter(connection_name__contains=con['connection_name'],
-                                                       computer_room__contains=con['computer_room'])[start:end]
+                                                       computer_room=con['computer_room'],
+                                                       dbtype=con['dbtype'])[start:end]
                 else:
                     page_number = DatabaseList.objects.count()
                     if page_number == 0:
@@ -114,7 +117,8 @@ class management_db(baseview.SuperUserpermissions):
                     computer_room=data['computer_room'],
                     username=data['username'],
                     password=password,
-                    port=data['port']
+                    port=data['port'],
+                    dbtype=data['dbtype']
                 )
                 return Response('ok')
             except Exception as e:
@@ -138,13 +142,18 @@ class management_db(baseview.SuperUserpermissions):
                 user = request.data['user']
                 password = request.data['password']
                 port = request.data['port']
+                dbtype =request.data['dbtype']
             except KeyError as e:
                 CUSTOM_ERROR.error(f'{e.__class__.__name__}: {e}')
                 return HttpResponse(status=500)
             else:
                 try:
-                    with con_database.SQLgo(ip=ip, user=user, password=password, port=port):
-                        return Response('连接成功!')
+                    if dbtype=='SqlServer':
+                        with con_mssql_database.MSSQL(ip=ip, user=user, password=password, port=port):
+                            return Response('连接成功!')
+                    else:
+                        with con_database.SQLgo(ip=ip, user=user, password=password, port=port):
+                             return Response('连接成功!')
                 except Exception as e:
                     CUSTOM_ERROR.error(f'{e.__class__.__name__}: {e}')
                     return Response('连接失败!')
