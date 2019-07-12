@@ -1,5 +1,5 @@
 <p align="center">
-        <img width="300" src="logo.png">
+        <img width="300" src="img/logo.jpg">
 </p>
 
 # Yearning SQL审核平台
@@ -8,6 +8,12 @@
 ![](https://img.shields.io/badge/version-v1.4.7-brightgreen.svg)  
 
 ##### MYSQL web端 SQL审核平台。
+
+## Version 版本
+
+Yearning for Python v1.4.7
+
+Yearning for go v2.0.0-beta
 
 ## Website 官网
 
@@ -32,11 +38,11 @@
 - 用户权限及管理
     - 拼图式权限划分
     - 组合式权限组
-    - 支持限制邮箱后缀名的有限注册功能
+    - 注册
 - 其他
     - todoList
     - LDAP登录  
-    - 动态配置 
+    - 动态审核规则配置 
 
 ## Install 安装及使用日志
 
@@ -54,7 +60,7 @@
 
 
 
-![login](img/login.jpeg)
+![login](img/login.png)
 
 
 - Dashboard
@@ -63,18 +69,18 @@
 
 - 审核
 
-![](img/order.png)
+![](img/audit.png)
 
 - SQL语法高亮及自动补全
 
-![](img/lighit.png)
+![](img/highlight.png)
 
 - 查询
 
 ![](img/query.png)
 
 - 细粒度的权限分配
-![](img/PER.png)
+![](img/per.png)
 
 - 我的工单
 ![](img/myorder.png)
@@ -86,6 +92,6 @@
 
 任何二次开发及二次开源项目请严格遵守相应开源许可
 
-2018 © Cookie
+2019 © Henry Yee
 
 
