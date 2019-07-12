@@ -13,7 +13,11 @@
 
 Yearning for Python v1.4.7
 
-Yearning for go v2.0.0-beta
+[Yearning for go v2.0.0-beta](https://github.com/cookieY/Yearning/releases)
+
+## Yearning2.0 前端项目 
+
+[Gemini](https://github.com/cookieY/Gemini)
 
 ## Website 官网
 
@@ -36,8 +40,8 @@ Yearning for go v2.0.0-beta
     - E-mail工单推送
     - 钉钉webhook机器人工单推送
 - 用户权限及管理
-    - 拼图式权限划分
-    - 组合式权限组
+    - 角色划分
+    - 基于用户的细粒度权限
     - 注册
 - 其他
     - todoList
