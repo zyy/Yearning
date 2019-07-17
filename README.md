@@ -13,8 +13,6 @@
 
 Yearning for Python v1.4.7
 
-[Yearning for go v2.0.0-beta](https://github.com/cookieY/Yearning/releases)
-
 ## Yearning2.0 前端项目 
 
 [Gemini](https://github.com/cookieY/Gemini)
