@@ -22,6 +22,11 @@ Yearning for Python v1.4.7
 [www.yearning.io](http://yearning.io)
 
 
+## Community 社区
+   Yearning 使用与交流 Q群: 103674679(已满)
+   Yearning 使用与交流 Q群: 838483451
+   Yearning2.0 使用交流 Q群: 747364310(beta版本阶段，不适用于生产环境)
+
 ## Feature 功能
 
 - SQL查询
@@ -51,8 +56,6 @@ Yearning for Python v1.4.7
 [使用及安装文档](http://guide.yearning.io)
   
 ## About 联系方式
-   
-   QQ群:103674679
    
    E-mail: im@supermancookie.com
 
