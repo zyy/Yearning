@@ -7,8 +7,6 @@
 ![](https://img.shields.io/badge/build-release-brightgreen.svg)  
 ![](https://img.shields.io/badge/version-v1.4.7-brightgreen.svg)  
 
-# 冯坚烽 我在这里哦
-
 ##### MYSQL web端 SQL审核平台。
 
 ## Version 版本
