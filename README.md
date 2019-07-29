@@ -23,9 +23,7 @@ Yearning for Python v1.4.7
 
 
 ## Community 社区
-   Yearning 使用与交流          Q群: 103674679(已满)
-   
-   Yearning 使用与交流          Q群: 838483451
+   Yearning 使用与交流          Q群: 103674679
    
    Yearning2.0(Go) 使用交流     Q群: 747364310(beta版本阶段，不适用于生产环境)
 
